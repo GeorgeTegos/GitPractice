@@ -32,3 +32,6 @@ def min_str(str1, str2):
 
 result = min_str("Hello", "Helo")
 print(result)
+
+
+#Give me a function that takes a list of 10 numbers as an argument, return the result of multiplying the 5th number with the 10th number. 
