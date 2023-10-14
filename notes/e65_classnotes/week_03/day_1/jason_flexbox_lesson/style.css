@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.header__logo {
+  background-color: green;
+}
+
+.boxes {
+  background-color: pink;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.box {
+  background-color: purple;
+  width: calc((100% - 48px) / 4);
+  height: 300px;
+}
