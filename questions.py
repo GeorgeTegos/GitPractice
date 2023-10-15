@@ -34,4 +34,13 @@ result = min_str("Hello", "Helo")
 print(result)
 
 
-#Give me a function that takes a list of 10 numbers as an argument, return the result of multiplying the 5th number with the 10th number. 
+#Give me a function that takes a list of 10 numbers as an argument, return the result of multiplying the 5th number with the 10th number.
+list_of_numbers = [1,2,3,4,5,6,7,8,9,10]
+
+def multiply_from_list(list):
+    fifth_number = list[4]
+    tenth_number = list[9]
+    result = fifth_number * tenth_number
+    return result
+
+print(multiply_from_list(list_of_numbers))
