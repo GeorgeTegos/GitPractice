@@ -75,5 +75,7 @@ print(split_string)
 # option 2 - remove and rejoin "the" at previous index with insert
 split_string.remove("the")
 print(split_string)
+result = " ".join(split_string)
+print(result)
 split_string.insert(4, "the")
 print(split_string)
