@@ -58,3 +58,6 @@ def mult_list_by_2(numbers):
 
 
 print(mult_list_by_2(multiply_this_list_by_2))
+
+#Given the String below , make it into a List and remove "the", then join it back
+string = "Hello my name is the George"
