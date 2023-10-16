@@ -61,3 +61,19 @@ print(mult_list_by_2(multiply_this_list_by_2))
 
 #Given the String below , make it into a List and remove "the", then join it back
 string = "Hello my name is the George"
+
+# split string to a list
+split_string = string.split(" ")
+print(split_string)
+
+# option 1 - remove and rejoin "the" at the end of list with append
+split_string.remove("the")
+print(split_string)
+split_string.append("the")
+print(split_string)
+
+# option 2 - remove and rejoin "the" at previous index with insert
+split_string.remove("the")
+print(split_string)
+split_string.insert(4, "the")
+print(split_string)
