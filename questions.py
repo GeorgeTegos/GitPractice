@@ -45,6 +45,16 @@ def multiply_from_list(list):
 
 print(multiply_from_list(list_of_numbers))
 
-#Given this List of numbers , make a function that returns a NEW list with the numbers multiply by 2
+#Given this List of numbers , make a function that returns a NEW list with the numbers multiplied by 2
 
-multiply_this_list_by_2 = [2,4,6,8,10]
+multiply_this_list_by_2 = [2, 4, 6, 8, 10]
+
+def mult_list_by_2(numbers):
+    new_list = []
+    for number in numbers:
+        new_number = number * 2
+        new_list.append(new_number)
+    return new_list
+
+
+print(mult_list_by_2(multiply_this_list_by_2))
