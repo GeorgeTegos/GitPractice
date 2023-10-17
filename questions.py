@@ -45,6 +45,37 @@ def multiply_from_list(list):
 
 print(multiply_from_list(list_of_numbers))
 
-#Given this List of numbers , make a function that returns a NEW list with the numbers multiply by 2
+#Given this List of numbers , make a function that returns a NEW list with the numbers multiplied by 2
 
-multiply_this_list_by_2 = [2,4,6,8,10]
+multiply_this_list_by_2 = [2, 4, 6, 8, 10]
+
+def mult_list_by_2(numbers):
+    new_list = []
+    for number in numbers:
+        new_number = number * 2
+        new_list.append(new_number)
+    return new_list
+
+
+print(mult_list_by_2(multiply_this_list_by_2))
+
+#Given the String below , make it into a List and remove "the", then join it back
+string = "Hello my name is the George"
+
+# split string to a list
+split_string = string.split(" ")
+print(split_string)
+
+# option 1 - remove and rejoin "the" at the end of list with append
+split_string.remove("the")
+print(split_string)
+split_string.append("the")
+print(split_string)
+
+# option 2 - remove and rejoin "the" at previous index with insert
+split_string.remove("the")
+print(split_string)
+result = " ".join(split_string)
+print(result)
+split_string.insert(4, "the")
+print(split_string)
