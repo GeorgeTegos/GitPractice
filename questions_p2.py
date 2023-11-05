@@ -72,9 +72,19 @@ print(whoLikes(listOfPeople))
 listOfNumbers = [6, 2, 1]
 
 def sumNoMinNoMax(list):
-    min_num = min(list)
-    max_num = max(list)
-    result = sum(list) - max_num - min_num
-    return result
+    # min_num = min(list)
+    # max_num = max(list)
+    # result = sum(list) - max_num - min_num
+    # return result
+    return sum((list-(max(list)-min(list))))
 
 print(sumNoMinNoMax(listOfNumbers))
+
+# Write a method, that will get an integer array as parameter and will process every number from this array.
+
+# Return a new array with processing every number of the input-array like this:
+
+# If the number has an integer square root, take this, otherwise square the number.
+
+# Example
+# [4,3,9,7,2,1] -> [2,9,3,49,4,1]
