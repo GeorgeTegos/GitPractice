@@ -69,9 +69,12 @@ print(whoLikes(listOfPeople))
 # [ 6, 2, 1, 8, 10 ] => 16
 # [ 1, 1, 11, 2, 3 ] => 6
 
-listOfNumbers = [ 6, 2, 1, 8, 10 ]
+listOfNumbers = [6, 2, 1]
 
 def sumNoMinNoMax(list):
-    pass
+    min_num = min(list)
+    max_num = max(list)
+    result = sum(list) - max_num - min_num
+    return result
 
-sumNoMinNoMax(listOfNumbers)
+print(sumNoMinNoMax(listOfNumbers))
