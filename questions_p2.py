@@ -39,11 +39,20 @@ print(finalString3)
 # ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
 # Note: For 4 or more names, the number in "and 2 others" simply increases.
 
-listOfPeople = []
+listOfPeople = ["Tina"]
 
 def whoLikes(list):
-    pass
-    # Code Here !
+    if len(list) == 0:
+        return "no one likes this"
+    elif len(list) == 1:
+        return f"{list[0]} likes this"
+    elif len(list) == 2:
+        return f"{list[0]} and {list[1]} like this"
+    elif len(list) == 3:
+        return f"{list[0]}, {list[1]} and {list[2]} like this"
+    elif len(list) >= 4:
+        return f"{list[0]}, {list[1]} and {len(list)-2} others like this"
 
 
 print(whoLikes(listOfPeople))
+
