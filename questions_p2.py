@@ -72,11 +72,11 @@ print(whoLikes(listOfPeople))
 listOfNumbers = [6, 2, 1]
 
 def sumNoMinNoMax(list):
-    # min_num = min(list)
-    # max_num = max(list)
-    # result = sum(list) - max_num - min_num
-    # return result
-    return sum((list-(max(list)-min(list))))
+    min_num = min(list)
+    max_num = max(list)
+    result = sum(list) - max_num - min_num
+    return result
+
 
 print(sumNoMinNoMax(listOfNumbers))
 
@@ -88,3 +88,18 @@ print(sumNoMinNoMax(listOfNumbers))
 
 # Example
 # [4,3,9,7,2,1] -> [2,9,3,49,4,1]
+
+import math
+
+testList = [4,3,9,7,2,1]
+
+arrayToReturn =[]
+def isSquareRoot(list):
+    for num in list:
+        x = math.sqrt(num)
+        if x.is_integer():
+            arrayToReturn.append(int(x))
+        else:
+            arrayToReturn.append(num ** 2)
+    return arrayToReturn
+print(isSquareRoot(testList))
