@@ -31,3 +31,6 @@ class Character():
     def skill_attack(self, skill):
         self.mana = self.mana - skill.mana_cost
         return skill.power
+
+    def receive_damage(self, amount):
+        self.hp = self.hp - amount
