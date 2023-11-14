@@ -57,5 +57,11 @@ print(elf_mage.my_skills())
 Spellsinger = SecondClass("QueenBee", "Elf", "Female", "Spellsinger" , "C")
 print(Spellsinger.gender)
 
-
+print("before")
 print(monsterOne.get_name())
+print(monsterTwo.get_name())
+Monster.set_name_for_all("tst")
+print("after")
+print(monsterOne.get_name())
+print(monsterTwo.get_cls_name())
+print(monsterTwo.get_name())
