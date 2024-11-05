@@ -3,10 +3,10 @@
 
 class Character():
 
-    def __init__(self,name, race, gender, _class):
+    def __init__(self,name, race, gendery, _class):
         self.name = name
         self.race = race
-        self.gender = gender
+        self.gendery = gendery
         self._class = _class
         self.hp = 300
         self.mana = 200
